@@ -1,0 +1,7 @@
+<h1>Books</h1>
+<a href="/books/add">Add a book</a>
+<ul>
+{% for b in books %}
+<li><a href="/books/{{ b.id }}">{{ b.title }}</a></li>
+{% endfor %}
+</ul>

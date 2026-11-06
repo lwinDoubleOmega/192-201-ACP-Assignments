@@ -1,0 +1,11 @@
+<h1>{{ heading }}</h1>
+
+<form method="post">
+    <p>Title: <input name="title" value="{{ book.title }}"></p>
+    <p>Author: <input name="author" value="{{ book.author }}"></p>
+    <p>Year: <input name="year" value="{{ book.year }}"></p>
+
+    <button type="submit">Save</button>
+</form>
+
+<a href="/books">Cancel</a>
