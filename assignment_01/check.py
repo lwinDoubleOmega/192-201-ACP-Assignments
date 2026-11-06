@@ -1,4 +1,4 @@
-from assignment_01.ac import AirConditioner
+from assignments.assignment_01.ac import AirConditioner
 
 results = []
 def check(name, fn):

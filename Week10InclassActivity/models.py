@@ -14,7 +14,7 @@ class Book:
         conn = sqlite3.connect(DB)
         rows = conn.execute("SELECT * FROM books").fetchall()
         conn.close()
-        return [cls(r[1], r[2], r[3], id=r[0]) for r in rows]
+        return [cls(r[1], r[2], r[3], id=r[0]) for r in rows]   
 
     @classmethod
     def load(cls, id):
@@ -25,7 +25,7 @@ class Book:
         conn.close()
         if row is None:
             return None
-        return cls(row[1], row[2], row[3], id=row[0])
+        return cls(row[1], row[2], row[3], id=row[0])  
 
     def save(self):
         conn = sqlite3.connect(DB)
